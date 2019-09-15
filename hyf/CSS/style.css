@@ -1,0 +1,379 @@
+/*THis is the css style sheet, I try to make perfect  like real website and also I  hope everything is readeable*/
+
+
+/*general */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f5f7ed;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*------this is the header-area---------*/
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #e8491d;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
+/*---this is for the logo Asmieh|Web Design------*/
+
+header #branding {
+    float: left;
+}
+
+header .highlight {
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Great Vibes', cursive;
+    cursor: pointer;
+    animation: textanimation 1s ease-in-out;
+}
+
+header .highlight:hover {
+    color: #ff0000;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+
+/*---this is navbar-area------*/
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+/*---this is image  slider-area---------*/
+
+#slider-image {
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+#slider-image figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+#slider-image figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+/*----this is subscribe section-area------*/
+
+#subscribe {
+    padding: 8px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#subscribe h1 {
+    float: left;
+}
+
+#subscribe form {
+    float: right;
+    margin-top: 15px;
+}
+
+#subscribe input[type='email'] {
+    padding: 5px;
+    height: 22px;
+    width: 250px;
+}
+
+.button-1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*----- this is the boxes-area------*/
+
+#boxes {
+    margin-top: 20px;
+    background: #f5f7ed;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+
+/*---------this is about-area------*/
+
+#About {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7ed;
+    background-image: url("https://i.postimg.cc/QMLRFt2j/big-2.jpg") no-repeat;
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 15px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+#main {
+    float: left;
+    width: 65%;
+}
+
+.color {
+    padding: 15px;
+    background: #f2f2f2;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.color:hover {
+    color: #183535;
+    border: 4px solid #fff;
+    border-radius: 30px;
+    transition: 1.5s;
+}
+
+#main .page-title {
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+
+/*------ services-area--------*/
+
+#services {
+    padding: 0;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+
+ul#asmie li {
+    list-style: none;
+    padding: 10px;
+    border: 3px solid #cccccc;
+    margin-bottom: 5px;
+    background-color: #eaefdc;
+}
+
+ul#asmie li:hover {
+    color: #080808;
+    background-color: #ffffff;
+    transition: 1.2s;
+    border-radius: 20px;
+}
+
+#main .services-title {
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+
+/*-----footer-area-----*/
+
+footer {
+    padding: 10px;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 700px;
+    background-color: #35424a;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: 'Lora', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e8491d;
+}
+
+.icone a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: #db3f0f;
+    color: #462bdf;
+    text-decoration: none;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 22px;
+}
+
+.icone a:hover {
+    background-color: #f6f6f6;
+}
+
+.icone a i {
+    transition: 0.5s all;
+}
+
+.icone a:hover i {
+    transform: scale(1.5) rotate(25deg);
+}
+
+
+/*--media queris to make responsible in all device like  in tablet, smartphone, mobile etc-----*/
+
+@media screen and (max-width: 780px) {
+    body {
+        width: 100%;
+        align-items: center;
+        background-color: #f2f2f2;
+    }
+    header #branding,
+    header nav,
+    header nav li,
+    #subscribe h1,
+    #subscribe form,
+    #boxes .box,
+    #main,
+    .circle img,
+    #slider-image,
+    #slider-image figure,
+    #slider-image figure img,
+    footer,
+    .footer-title,
+    footer .icone a {
+        align-items: center;
+        float: left;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    #subscribe button,
+    .quote button {
+        display: block;
+        width: 100%;
+    }
+    #subscribe form input[type='email'],
+    footer,
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    footer,
+    .footer-title,
+    footer .icone {
+        align-items: center;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        margin-top: 210px;
+        padding: 0;
+        margin: 0;
+    }
+}
